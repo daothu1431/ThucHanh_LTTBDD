@@ -3,9 +3,9 @@ void main(){
     'VietNam': 'HaNoi',
     'India': 'New Delhi',
     'China': 'Bejing',
-    'Phone':'0349394934',
+    'Phon':'0349394934',
     'Ages': '18'
   };
-  Capital.removeWhere((key, value) => key ==4);
+  Capital.removeWhere((key, value) => key.length != 4);
   print(Capital);
 }
